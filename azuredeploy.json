@@ -94,7 +94,7 @@
                 }
             }
         }, */
-        /*{
+        {
             "name": "managedIdentityDeploy",
             "type": "Microsoft.Resources/deployments",
             "apiVersion": "2019-10-01",
@@ -114,7 +114,7 @@
                     }
                 }
             }
-        },*/
+        },
         {
             "name": "imageGalleryDeploy",
             "type": "Microsoft.Resources/deployments",
