@@ -99,7 +99,7 @@ Register-AzResourceProvider Microsoft.Storage
       -Name $deploymentName `
       -Location usgovvirginia `
       -TemplateUri $url `
-      -rgName devsecops-demo-rg `
+      -rgName $imageResourceGroup `
       -rgLocation usgovvirginia `
       -DeploymentDebugLogLevel All
 ```

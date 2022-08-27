@@ -27,7 +27,7 @@
             "location": "USGovVirginia",
             "properties": {
                 "sku": {
-                    "name": "Standalone"
+                    "name": "PerGB2018"
                 },
                 "features": {
                     "searchVersion": 1
@@ -43,13 +43,13 @@
             },
             "properties": {
                 "sku": {
-                    "name": "Basic"
+                    "name": "Free"
                 }
             }
         },
         {
           "apiVersion": "2015-11-01-preview",
-          "location": "USGovVirginia",
+          "location": "[resourceGroup().location]",
           "name": "[concat(variables('solutionArray').solutions[copyIndex()].Name)]",
           "type": "Microsoft.OperationsManagement/solutions",
           "id": "[concat('/subscriptions/', subscription().subscriptionId, '/resourceGroups/', resourceGroup().name, '/providers/Microsoft.OperationsManagement/solutions/', variables('solutionArray').solutions[copyIndex()].Name)]",
