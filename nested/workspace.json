@@ -24,7 +24,7 @@
             "name": "[variables('workspaceName')]",
             "type": "Microsoft.OperationalInsights/workspaces",
             "apiVersion": "2015-11-01-preview",
-            "location": "resourceGroup().location",
+            "location": "USGovVirginia",
             "properties": {
                 "sku": {
                     "name": "Standalone"
@@ -38,7 +38,7 @@
             "name": "[variables('automationAccountName')]",
             "type": "Microsoft.Automation/automationAccounts",
             "apiVersion": "2015-10-31",
-            "location": "resourceGroup().location",
+            "location": "USGovVirginia",
             "tags": {
             },
             "properties": {
