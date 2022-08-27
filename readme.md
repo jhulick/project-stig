@@ -92,15 +92,15 @@ Register-AzResourceProvider Microsoft.Storage
 ```
 2. Deploy the solution to create the images:
 ```    
-    $url = "https://raw.githubusercontent.com/shawngib/project-stig/main/azuredeploy.json"
+    $url = "https://raw.githubusercontent.com/jhulick/project-stig/main/azuredeploy.json"
     $imageResourceGroup = "<add the resource group name to create>" 
-    $deploymentName = "<Add a name of deployment>" + (Get-Random)
+    $deploymentName = "project-stig" + (Get-Random)
     New-AzSubscriptionDeployment `
       -Name $deploymentName `
-      -Location eastus `
+      -Location usgovvirginia `
       -TemplateUri $url `
-      -rgName $imageResourceGroup `
-      -rgLocation eastus `
+      -rgName devsecops-demo-rg `
+      -rgLocation usgovvirginia `
       -DeploymentDebugLogLevel All
 ```
 3. Create the images:
